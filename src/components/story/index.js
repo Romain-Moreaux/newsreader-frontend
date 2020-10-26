@@ -22,10 +22,10 @@ export default function Story({ storyId }) {
       </StoryTitle>
       <StoryMeta>
         <span className="story__by" data-testid="story-by">
-          <StoryMetaElement color="#000">By:</StoryMetaElement>
+          <StoryMetaElement color="#000">By: </StoryMetaElement>
           {story.by}
         </span>
-        <span className="story__time" data-testid="story-by">
+        <span className="story__time" data-testid="story-time">
           <StoryMetaElement color="#000">Posted:</StoryMetaElement>
           {mapTime(story.time)}
         </span>
