@@ -1,14 +1,21 @@
 import React, { useEffect, useState } from 'react'
-import { getStoryIds, getStory } from '../services/hnApi'
+import { Story } from '../components'
+import { getStoryIds } from '../services/hnApi'
 
 function StoriesContainer() {
   const [storyIds, setStoryIds] = useState([])
 
   useEffect(() => {
     getStoryIds().then((data) => setStoryIds(data))
-    // getStory('24893771').then((data) => console.log(data))
   }, [])
-  return <div>{storyIds}</div>
+  return (
+    <>
+      <h1>Hacker News Stories</h1>
+      {storyIds.map((storyId) => (
+        <Story storyId={storyId} key={storyId} />
+      ))}
+    </>
+  )
 }
 
 export default StoriesContainer
