@@ -31,7 +31,6 @@ export const useInfiniteScroll = () => {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
     return () => {
-      console.log('remove listener')
       window.removeEventListener('scroll', handleScroll)
     }
   }, [handleScroll])

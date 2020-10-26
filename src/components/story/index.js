@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { memo, useEffect, useState } from 'react'
 import { mapTime } from '../../mappers/mapTime'
 import { getStory } from '../../services/hnApi'
 import {
@@ -8,7 +8,7 @@ import {
   StoryWrapper,
 } from './styles/story'
 
-export default function Story({ storyId }) {
+export default memo(function Story({ storyId }) {
   const [story, setStory] = useState({})
 
   useEffect(() => {
@@ -32,4 +32,4 @@ export default function Story({ storyId }) {
       </StoryMeta>
     </StoryWrapper>
   ) : null
-}
+})
