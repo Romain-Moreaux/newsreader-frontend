@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { mapTime } from '../../mappers/mapTime'
 import { getStory } from '../../services/hnApi'
 import {
   StoryMeta,
@@ -26,7 +27,7 @@ export default function Story({ storyId }) {
         </span>
         <span className="story__time" data-testid="story-by">
           <StoryMetaElement color="#000">Posted:</StoryMetaElement>
-          {story.time}
+          {mapTime(story.time)}
         </span>
       </StoryMeta>
     </StoryWrapper>
