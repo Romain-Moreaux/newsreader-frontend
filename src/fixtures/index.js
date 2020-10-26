@@ -6,9 +6,9 @@ export const singularStory = {
   url: 'https://something-from-me.com',
 }
 
-export const storyId = [1]
+export const storyIds = [1]
 
-export const emprtySingularStory = {
+export const emptySingularStory = {
   by: null,
   id: null,
   time: null,
