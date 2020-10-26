@@ -1,9 +1,10 @@
 export const debounce = (func, wait, immediate, args) => {
   let timeout
-  console.log('debounce ARGS')
+  console.log('debounce ARGS', timeout)
   return () => {
     const context = this
     const callNow = immediate && !timeout
+
     const later = () => {
       console.log('called later')
       timeout = null
@@ -11,6 +12,7 @@ export const debounce = (func, wait, immediate, args) => {
         func.apply(context, args)
       }
     }
+
     clearTimeout(timeout)
     timeout = setTimeout(later, wait)
 
