@@ -15,3 +15,20 @@ export const emptySingularStory = {
   title: null,
   url: null,
 }
+
+export const allArticles = {
+  allArticles: [
+    {
+      author: 'Romain Moreaux',
+      id: 1,
+      time: 1567209822,
+      title: 'Story from home',
+      url: 'https://something-from-me.com',
+      source: 'hackernews',
+    },
+  ],
+}
+
+export const noArticles = {
+  allArticles: [],
+}
