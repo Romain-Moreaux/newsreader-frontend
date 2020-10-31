@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const StoryWrapper = styled.section`
+export const ArticleWrapper = styled.section`
   padding-top: 10px;
   margin-bottom: 10px;
   border-top: 1px solid #cccccc;
@@ -12,7 +12,7 @@ export const StoryWrapper = styled.section`
     padding-bottom: 0;
   }
 `
-export const StoryTitle = styled.h1`
+export const ArticleTitle = styled.h1`
   margin: 0;
   margin-bottom: 5px;
   font-size: 18px;
@@ -25,7 +25,7 @@ export const StoryTitle = styled.h1`
     text-decoration: none;
   }
 `
-export const StoryMeta = styled.div`
+export const ArticleMeta = styled.div`
   font-style: italic;
 
   > span:first-child {
@@ -41,7 +41,7 @@ export const StoryMeta = styled.div`
   }
 `
 
-export const StoryMetaElement = styled.span`
+export const ArticleMetaElement = styled.span`
   font-weight: bold;
   color: ${(props) => props.color || 'red'};
 `

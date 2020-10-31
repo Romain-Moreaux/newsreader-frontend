@@ -1,6 +1,6 @@
 import React from 'react'
-import StoriesContainer from './containers/StoriesContainer'
+import { ArticlesContainer } from './containers'
 
 export const App = () => {
-  return <StoriesContainer />
+  return <ArticlesContainer />
 }
