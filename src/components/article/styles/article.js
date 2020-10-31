@@ -43,5 +43,5 @@ export const ArticleMeta = styled.div`
 
 export const ArticleMetaElement = styled.span`
   font-weight: bold;
-  color: ${(props) => props.color || 'red'};
+  color: ${(props) => props.color};
 `

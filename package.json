@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@apollo/client": "^3.2.5",
     "@apollo/react-hooks": "^4.0.0",
     "apollo-boost": "^0.4.9",
     "axios": "^0.21.0",
@@ -21,11 +22,13 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.js",
-      "!src/index.js",
-      "!src/hooks/*.js",
-      "!src/mappers/*.js",
-      "!src/utils/*.js"
+      "src/constants/*.js",
+      "src/fixtures/*.js",
+      "src/graphql/*.js",
+      "src/components/article/index.js",
+      "src/components/article/styles/article.js",
+      "src/containers/articlesContainer/index.js",
+      "src/containers/articlesContainer/styles/articlesContainer.js"
     ],
     "coverageThreshold": {
       "global": {

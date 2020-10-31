@@ -1,7 +1,14 @@
-import { gql } from 'graphql-tag'
+import { gql } from '@apollo/client'
 
 export const GET_ALL_ARTICLES = gql`
-    query getAllArticles{
-        
+  query getAllArticles {
+    allArticles {
+      id
+      title
+      author
+      url
+      time
+      source
     }
+  }
 `
